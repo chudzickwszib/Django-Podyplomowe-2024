@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista krajów</title>
+</head>
+<body>
+    <h2>Lista {{ country_count }} krajów</h2>
+    <hr/>
+    <ul>
+        {% for country in countries %}
+        	<li>{{ country.country }}</li>
+        {% empty %}
+            <h1>Lista krajów jest pusta!</h1>
+        {% endfor %}
+    </ul>
+</body>
+</html>
