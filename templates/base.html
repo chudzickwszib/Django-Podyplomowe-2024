@@ -12,6 +12,9 @@
 <body style="margin: 0">
 <div style="height: 50px; background-color: lightgrey; display: flex; justify-content: center; padding: 5px; margin-bottom: 20px ">
     <h3>Planer podróży</h3>
+    <div>
+        <a href="{% url 'country_list_url' country_count=10 %}">Listy krajów</a>
+    </div>
 </div>
 <div style="padding: 50px">
     {% block page_content %}{% endblock %}
